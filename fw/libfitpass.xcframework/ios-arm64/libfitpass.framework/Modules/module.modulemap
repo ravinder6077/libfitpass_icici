@@ -1,0 +1,11 @@
+framework module libfitpass {
+  umbrella header "libfitpass.h"
+
+  export *
+  module * { export * }
+}
+
+module libfitpass.Swift {
+  header "libfitpass-Swift.h"
+  requires objc
+}

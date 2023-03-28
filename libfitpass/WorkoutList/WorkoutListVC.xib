@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="fp_pwa_font_icon.ttf">
+            <string>fp_pwa_font_icon</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkoutListVC" customModule="libfitpass_icici" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="WUX-TN-dNQ" id="tuq-bo-6At"/>
+                <outlet property="btnBackLeading" destination="QKP-x2-jb2" id="TDT-fy-vKC"/>
+                <outlet property="cvTab" destination="I92-h2-mye" id="YXO-Je-g4c"/>
+                <outlet property="cvTabLeading" destination="6pS-fG-8cd" id="GGK-lg-7mQ"/>
+                <outlet property="cvTabTrailing" destination="J8X-jD-aVB" id="N4a-s0-HiZ"/>
+                <outlet property="lblHeader" destination="ml7-X5-H3f" id="6xk-rn-Qtb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeader" destination="LAb-vg-WEz" id="Q7S-Zn-GWd"/>
+                <outlet property="viewHeaderHt" destination="KWL-D4-xHh" id="VQH-rz-ZkT"/>
+                <outlet property="webView" destination="Ayu-zQ-x6t" id="Esh-U5-MQN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAb-vg-WEz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-TN-dNQ">
+                            <rect key="frame" x="10" y="4" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="HUI-VK-Kxy"/>
+                                <constraint firstAttribute="height" constant="40" id="dAN-ns-zQh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="fp_pwa_font_icon" family="fp_pwa_font_icon" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title=""/>
+                            <connections>
+                                <action selector="didTapBtnBack:" destination="-1" eventType="touchUpInside" id="J1S-T5-OYf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FITPASS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml7-X5-H3f">
+                            <rect key="frame" x="60" y="12" width="294" height="24"/>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="colorBlueDark"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="KWL-D4-xHh"/>
+                        <constraint firstAttribute="trailing" secondItem="ml7-X5-H3f" secondAttribute="trailing" constant="60" id="P6c-0n-i7x"/>
+                        <constraint firstItem="WUX-TN-dNQ" firstAttribute="leading" secondItem="LAb-vg-WEz" secondAttribute="leading" constant="10" id="QKP-x2-jb2"/>
+                        <constraint firstItem="ml7-X5-H3f" firstAttribute="leading" secondItem="LAb-vg-WEz" secondAttribute="leading" constant="60" id="brc-6W-n8W"/>
+                        <constraint firstAttribute="bottom" secondItem="WUX-TN-dNQ" secondAttribute="bottom" id="rjb-wj-Tzt"/>
+                        <constraint firstAttribute="bottom" secondItem="ml7-X5-H3f" secondAttribute="bottom" constant="8" id="zaX-BY-r3x"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="I92-h2-mye">
+                    <rect key="frame" x="0.0" y="44" width="414" height="31"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="yWz-tL-Az6"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2zu-IE-Nsq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mLJ-X6-AjV"/>
+                        <outlet property="delegate" destination="-1" id="I0N-YZ-BEY"/>
+                    </connections>
+                </collectionView>
+                <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayu-zQ-x6t">
+                    <rect key="frame" x="0.0" y="75" width="414" height="592"/>
+                    <color key="backgroundColor" name="colorBlueDark"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <color key="backgroundColor" name="colorBlueDark"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ayu-zQ-x6t" secondAttribute="trailing" id="29S-mA-u9N"/>
+                <constraint firstItem="I92-h2-mye" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6pS-fG-8cd"/>
+                <constraint firstAttribute="trailing" secondItem="I92-h2-mye" secondAttribute="trailing" id="J8X-jD-aVB"/>
+                <constraint firstItem="LAb-vg-WEz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qcd-eq-W5t"/>
+                <constraint firstAttribute="bottom" secondItem="Ayu-zQ-x6t" secondAttribute="bottom" id="deb-cO-m0A"/>
+                <constraint firstItem="Ayu-zQ-x6t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fk8-rF-Ke6"/>
+                <constraint firstItem="I92-h2-mye" firstAttribute="top" secondItem="LAb-vg-WEz" secondAttribute="bottom" id="gb0-ef-pIj"/>
+                <constraint firstItem="LAb-vg-WEz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gxA-JS-ujm"/>
+                <constraint firstItem="Ayu-zQ-x6t" firstAttribute="top" secondItem="I92-h2-mye" secondAttribute="bottom" id="lhz-9O-cQM"/>
+                <constraint firstAttribute="trailing" secondItem="LAb-vg-WEz" secondAttribute="trailing" id="pRa-Vc-IkR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="colorBlueDark">
+            <color red="0.0" green="0.18823529411764706" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

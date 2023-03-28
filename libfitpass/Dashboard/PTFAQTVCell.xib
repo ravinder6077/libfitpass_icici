@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PTFAQTVCell" customModule="DemoFitpassLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-3K-QgZ" customClass="CardView" customModule="DemoFitpassLibrary" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="How do I get started with FITPASS?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyZ-Os-dcs">
+                                <rect key="frame" x="10" y="8" width="270" height="17"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.12156862745098039" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-mC-C7T">
+                                <rect key="frame" x="285" y="9" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Gha-S2-FNa"/>
+                                    <constraint firstAttribute="height" constant="15" id="R6R-Z3-zck"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xf7-Bd-Rzb">
+                                <rect key="frame" x="10" y="35" width="290" height="1"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZUp-km-xaL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4E-RJ-BAe">
+                                <rect key="frame" x="10" y="45" width="290" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.51372549019607838" green="0.60392156862745094" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nga-mC-C7T" firstAttribute="leading" secondItem="NyZ-Os-dcs" secondAttribute="trailing" constant="5" id="2gu-bC-Bkb"/>
+                            <constraint firstItem="xf7-Bd-Rzb" firstAttribute="top" secondItem="NyZ-Os-dcs" secondAttribute="bottom" constant="10" id="4jK-EO-V4b"/>
+                            <constraint firstAttribute="trailing" secondItem="l4E-RJ-BAe" secondAttribute="trailing" constant="10" id="75S-4C-CdH"/>
+                            <constraint firstAttribute="trailing" secondItem="Nga-mC-C7T" secondAttribute="trailing" constant="10" id="CjY-CH-3z3"/>
+                            <constraint firstItem="NyZ-Os-dcs" firstAttribute="leading" secondItem="DGg-3K-QgZ" secondAttribute="leading" constant="10" id="JaL-1O-6fT"/>
+                            <constraint firstItem="NyZ-Os-dcs" firstAttribute="top" secondItem="DGg-3K-QgZ" secondAttribute="top" constant="8" id="TdF-2D-KPC"/>
+                            <constraint firstItem="xf7-Bd-Rzb" firstAttribute="leading" secondItem="DGg-3K-QgZ" secondAttribute="leading" constant="10" id="WgI-lA-nEM"/>
+                            <constraint firstAttribute="bottom" secondItem="l4E-RJ-BAe" secondAttribute="bottom" constant="10.5" id="ihH-0m-BbN"/>
+                            <constraint firstItem="l4E-RJ-BAe" firstAttribute="leading" secondItem="DGg-3K-QgZ" secondAttribute="leading" constant="10" id="lAq-nM-VlW"/>
+                            <constraint firstItem="l4E-RJ-BAe" firstAttribute="top" secondItem="NyZ-Os-dcs" secondAttribute="bottom" constant="20" id="sRb-cP-Ng1"/>
+                            <constraint firstAttribute="trailing" secondItem="xf7-Bd-Rzb" secondAttribute="trailing" constant="10" id="vgL-1K-9n8"/>
+                            <constraint firstItem="Nga-mC-C7T" firstAttribute="centerY" secondItem="NyZ-Os-dcs" secondAttribute="centerY" id="yfD-sI-Twr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DGg-3K-QgZ" secondAttribute="bottom" constant="5" id="VcP-fc-26N"/>
+                    <constraint firstItem="DGg-3K-QgZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="dMG-AO-3L3"/>
+                    <constraint firstAttribute="trailing" secondItem="DGg-3K-QgZ" secondAttribute="trailing" constant="5" id="u6W-St-Zpw"/>
+                    <constraint firstItem="DGg-3K-QgZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yik-Cy-bx2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgPlusMinus" destination="Nga-mC-C7T" id="PNk-u0-JHe"/>
+                <outlet property="lblAns" destination="l4E-RJ-BAe" id="6w1-qu-bOa"/>
+                <outlet property="lblQues" destination="NyZ-Os-dcs" id="342-1b-o1Q"/>
+                <outlet property="lblQuesBottom" destination="sRb-cP-Ng1" id="fDs-pW-hLf"/>
+                <outlet property="lblQuesTop" destination="TdF-2D-KPC" id="TiK-ES-JGP"/>
+                <outlet property="viewCard" destination="DGg-3K-QgZ" id="qR3-qw-TTe"/>
+                <outlet property="viewSeperator" destination="xf7-Bd-Rzb" id="fk7-KQ-o47"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="88"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

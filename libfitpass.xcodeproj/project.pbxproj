@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A3488F429D1A697005D205D /* libfitpass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3488F329D1A697005D205D /* libfitpass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A34894A29D1A7E9005D205D /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3488FB29D1A7E8005D205D /* AsyncImageView.m */; };
+		4A34894B29D1A7E9005D205D /* MyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3488FC29D1A7E8005D205D /* MyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A34894C29D1A7E9005D205D /* UIImage+animatedGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3488FD29D1A7E8005D205D /* UIImage+animatedGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A34894D29D1A7E9005D205D /* AsyncImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3488FE29D1A7E8005D205D /* AsyncImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A34894E29D1A7E9005D205D /* MyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3488FF29D1A7E8005D205D /* MyLoader.m */; };
+		4A34894F29D1A7E9005D205D /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34890029D1A7E8005D205D /* UIImage+animatedGIF.m */; };
+		4A34895029D1A7E9005D205D /* CryptLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34890229D1A7E8005D205D /* CryptLib.m */; };
+		4A34895229D1A7E9005D205D /* ProgressBarCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34890529D1A7E8005D205D /* ProgressBarCVCell.xib */; };
+		4A34895329D1A7E9005D205D /* FPDashboardCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34890629D1A7E8005D205D /* FPDashboardCardViewCell.swift */; };
+		4A34895429D1A7E9005D205D /* CommonWebPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34890729D1A7E8005D205D /* CommonWebPage.xib */; };
+		4A34895529D1A7E9005D205D /* MacrosCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34890829D1A7E8005D205D /* MacrosCVCell.swift */; };
+		4A34895629D1A7E9005D205D /* DashboardMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34890929D1A7E8005D205D /* DashboardMenuCell.xib */; };
+		4A34895729D1A7E9005D205D /* FPDashboardWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34890A29D1A7E8005D205D /* FPDashboardWorkoutCell.swift */; };
+		4A34895829D1A7E9005D205D /* FitpassDashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34890B29D1A7E8005D205D /* FitpassDashboard.xib */; };
+		4A34895929D1A7E9005D205D /* ProgressBarCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34890C29D1A7E8005D205D /* ProgressBarCVCell.swift */; };
+		4A34895A29D1A7E9005D205D /* MacrosCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34890D29D1A7E8005D205D /* MacrosCVCell.xib */; };
+		4A34895B29D1A7E9005D205D /* PTFAQTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34890E29D1A7E8005D205D /* PTFAQTVCell.swift */; };
+		4A34895C29D1A7E9005D205D /* FPDashboardWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34890F29D1A7E8005D205D /* FPDashboardWorkoutCell.xib */; };
+		4A34895D29D1A7E9005D205D /* DashboardMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34891029D1A7E8005D205D /* DashboardMenuCell.swift */; };
+		4A34895E29D1A7E9005D205D /* FitpassDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34891129D1A7E8005D205D /* FitpassDashboard.swift */; };
+		4A34895F29D1A7E9005D205D /* FPDashboardCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34891229D1A7E8005D205D /* FPDashboardCardViewCell.xib */; };
+		4A34896029D1A7E9005D205D /* CommonWebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34891329D1A7E8005D205D /* CommonWebPage.swift */; };
+		4A34896129D1A7E9005D205D /* PTFAQTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34891429D1A7E8005D205D /* PTFAQTVCell.xib */; };
+		4A34896229D1A7E9005D205D /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34891629D1A7E8005D205D /* Downloader.swift */; };
+		4A34896329D1A7E9005D205D /* ScanWorkout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34891729D1A7E8005D205D /* ScanWorkout.xib */; };
+		4A34896429D1A7E9005D205D /* CryptLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34891829D1A7E8005D205D /* CryptLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A34896529D1A7E9005D205D /* FPConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A34891929D1A7E8005D205D /* FPConfig.plist */; };
+		4A34896629D1A7E9005D205D /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A34891A29D1A7E8005D205D /* ColorAsset.xcassets */; };
+		4A34896829D1A7E9005D205D /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34891D29D1A7E8005D205D /* LocationService.swift */; };
+		4A34896929D1A7E9005D205D /* loader_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A34891E29D1A7E8005D205D /* loader_gif.gif */; };
+		4A34896A29D1A7E9005D205D /* ScanWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34891F29D1A7E8005D205D /* ScanWorkout.swift */; };
+		4A34896B29D1A7E9005D205D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34892129D1A7E8005D205D /* Constants.swift */; };
+		4A34896C29D1A7E9005D205D /* FFAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34892229D1A7E8005D205D /* FFAlertView.xib */; };
+		4A34896D29D1A7E9005D205D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34892329D1A7E8005D205D /* CardView.swift */; };
+		4A34896E29D1A7E9005D205D /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34892429D1A7E8005D205D /* UIColor+Additions.swift */; };
+		4A34896F29D1A7E9005D205D /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34892529D1A7E8005D205D /* CircularProgressView.swift */; };
+		4A34897029D1A7E9005D205D /* Constant.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34892629D1A7E8005D205D /* Constant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A34897129D1A7E9005D205D /* THLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34892729D1A7E8005D205D /* THLabel.m */; };
+		4A34897229D1A7E9005D205D /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34892829D1A7E8005D205D /* MyViewController.swift */; };
+		4A34897329D1A7E9005D205D /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34892A29D1A7E8005D205D /* IconFont.swift */; };
+		4A34897429D1A7E9005D205D /* THLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34892B29D1A7E8005D205D /* THLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A34897529D1A7E9005D205D /* fp_pwa_font_icon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34892D29D1A7E8005D205D /* fp_pwa_font_icon.ttf */; };
+		4A34897629D1A7E9005D205D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34892F29D1A7E8005D205D /* Roboto-Medium.ttf */; };
+		4A34897729D1A7E9005D205D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893029D1A7E8005D205D /* Roboto-Light.ttf */; };
+		4A34897829D1A7E9005D205D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893129D1A7E8005D205D /* Roboto-Regular.ttf */; };
+		4A34897929D1A7E9005D205D /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893229D1A7E8005D205D /* Roboto-MediumItalic.ttf */; };
+		4A34897A29D1A7E9005D205D /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893329D1A7E8005D205D /* Roboto-ThinItalic.ttf */; };
+		4A34897B29D1A7E9005D205D /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893429D1A7E8005D205D /* Roboto-BoldItalic.ttf */; };
+		4A34897C29D1A7E9005D205D /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893529D1A7E8005D205D /* Roboto-LightItalic.ttf */; };
+		4A34897D29D1A7E9005D205D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893629D1A7E8005D205D /* Roboto-Italic.ttf */; };
+		4A34897E29D1A7E9005D205D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893729D1A7E8005D205D /* LICENSE.txt */; };
+		4A34897F29D1A7E9005D205D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893829D1A7E8005D205D /* Roboto-BlackItalic.ttf */; };
+		4A34898029D1A7E9005D205D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893929D1A7E8005D205D /* Roboto-Bold.ttf */; };
+		4A34898129D1A7E9005D205D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893A29D1A7E8005D205D /* Roboto-Thin.ttf */; };
+		4A34898229D1A7E9005D205D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893B29D1A7E8005D205D /* Roboto-Black.ttf */; };
+		4A34898329D1A7E9005D205D /* FFAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34893C29D1A7E8005D205D /* FFAlertView.swift */; };
+		4A34898429D1A7E9005D205D /* ShowQRVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34893F29D1A7E9005D205D /* ShowQRVC.xib */; };
+		4A34898529D1A7E9005D205D /* ScanWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34894029D1A7E9005D205D /* ScanWorkoutCell.swift */; };
+		4A34898629D1A7E9005D205D /* ConfirmWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34894129D1A7E9005D205D /* ConfirmWorkoutVC.swift */; };
+		4A34898729D1A7E9005D205D /* ScanWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34894229D1A7E9005D205D /* ScanWorkoutCell.xib */; };
+		4A34898829D1A7E9005D205D /* ConfirmWorkoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34894329D1A7E9005D205D /* ConfirmWorkoutVC.xib */; };
+		4A34898929D1A7E9005D205D /* ShowQRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34894429D1A7E9005D205D /* ShowQRVC.swift */; };
+		4A34898A29D1A7E9005D205D /* WorkoutListCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34894629D1A7E9005D205D /* WorkoutListCard.xib */; };
+		4A34898B29D1A7E9005D205D /* WorkoutListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34894729D1A7E9005D205D /* WorkoutListVC.swift */; };
+		4A34898C29D1A7E9005D205D /* WorkoutListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34894829D1A7E9005D205D /* WorkoutListVC.xib */; };
+		4A34898D29D1A7E9005D205D /* WorkoutListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34894929D1A7E9005D205D /* WorkoutListCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A3488F029D1A697005D205D /* libfitpass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libfitpass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A3488F329D1A697005D205D /* libfitpass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libfitpass.h; sourceTree = "<group>"; };
+		4A3488FB29D1A7E8005D205D /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		4A3488FC29D1A7E8005D205D /* MyLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoader.h; sourceTree = "<group>"; };
+		4A3488FD29D1A7E8005D205D /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		4A3488FE29D1A7E8005D205D /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		4A3488FF29D1A7E8005D205D /* MyLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoader.m; sourceTree = "<group>"; };
+		4A34890029D1A7E8005D205D /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		4A34890229D1A7E8005D205D /* CryptLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptLib.m; sourceTree = "<group>"; };
+		4A34890529D1A7E8005D205D /* ProgressBarCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressBarCVCell.xib; sourceTree = "<group>"; };
+		4A34890629D1A7E8005D205D /* FPDashboardCardViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPDashboardCardViewCell.swift; sourceTree = "<group>"; };
+		4A34890729D1A7E8005D205D /* CommonWebPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonWebPage.xib; sourceTree = "<group>"; };
+		4A34890829D1A7E8005D205D /* MacrosCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacrosCVCell.swift; sourceTree = "<group>"; };
+		4A34890929D1A7E8005D205D /* DashboardMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardMenuCell.xib; sourceTree = "<group>"; };
+		4A34890A29D1A7E8005D205D /* FPDashboardWorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPDashboardWorkoutCell.swift; sourceTree = "<group>"; };
+		4A34890B29D1A7E8005D205D /* FitpassDashboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FitpassDashboard.xib; sourceTree = "<group>"; };
+		4A34890C29D1A7E8005D205D /* ProgressBarCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarCVCell.swift; sourceTree = "<group>"; };
+		4A34890D29D1A7E8005D205D /* MacrosCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MacrosCVCell.xib; sourceTree = "<group>"; };
+		4A34890E29D1A7E8005D205D /* PTFAQTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTFAQTVCell.swift; sourceTree = "<group>"; };
+		4A34890F29D1A7E8005D205D /* FPDashboardWorkoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPDashboardWorkoutCell.xib; sourceTree = "<group>"; };
+		4A34891029D1A7E8005D205D /* DashboardMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardMenuCell.swift; sourceTree = "<group>"; };
+		4A34891129D1A7E8005D205D /* FitpassDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitpassDashboard.swift; sourceTree = "<group>"; };
+		4A34891229D1A7E8005D205D /* FPDashboardCardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPDashboardCardViewCell.xib; sourceTree = "<group>"; };
+		4A34891329D1A7E8005D205D /* CommonWebPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonWebPage.swift; sourceTree = "<group>"; };
+		4A34891429D1A7E8005D205D /* PTFAQTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTFAQTVCell.xib; sourceTree = "<group>"; };
+		4A34891629D1A7E8005D205D /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		4A34891729D1A7E8005D205D /* ScanWorkout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanWorkout.xib; sourceTree = "<group>"; };
+		4A34891829D1A7E8005D205D /* CryptLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptLib.h; sourceTree = "<group>"; };
+		4A34891929D1A7E8005D205D /* FPConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FPConfig.plist; sourceTree = "<group>"; };
+		4A34891A29D1A7E8005D205D /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
+		4A34891D29D1A7E8005D205D /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		4A34891E29D1A7E8005D205D /* loader_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader_gif.gif; sourceTree = "<group>"; };
+		4A34891F29D1A7E8005D205D /* ScanWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanWorkout.swift; sourceTree = "<group>"; };
+		4A34892129D1A7E8005D205D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A34892229D1A7E8005D205D /* FFAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FFAlertView.xib; sourceTree = "<group>"; };
+		4A34892329D1A7E8005D205D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4A34892429D1A7E8005D205D /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		4A34892529D1A7E8005D205D /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		4A34892629D1A7E8005D205D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		4A34892729D1A7E8005D205D /* THLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLabel.m; sourceTree = "<group>"; };
+		4A34892829D1A7E8005D205D /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		4A34892A29D1A7E8005D205D /* IconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
+		4A34892B29D1A7E8005D205D /* THLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLabel.h; sourceTree = "<group>"; };
+		4A34892D29D1A7E8005D205D /* fp_pwa_font_icon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fp_pwa_font_icon.ttf; sourceTree = "<group>"; };
+		4A34892F29D1A7E8005D205D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		4A34893029D1A7E8005D205D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		4A34893129D1A7E8005D205D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4A34893229D1A7E8005D205D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4A34893329D1A7E8005D205D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		4A34893429D1A7E8005D205D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4A34893529D1A7E8005D205D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		4A34893629D1A7E8005D205D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		4A34893729D1A7E8005D205D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4A34893829D1A7E8005D205D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		4A34893929D1A7E8005D205D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4A34893A29D1A7E8005D205D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		4A34893B29D1A7E8005D205D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		4A34893C29D1A7E8005D205D /* FFAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFAlertView.swift; sourceTree = "<group>"; };
+		4A34893F29D1A7E9005D205D /* ShowQRVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowQRVC.xib; sourceTree = "<group>"; };
+		4A34894029D1A7E9005D205D /* ScanWorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanWorkoutCell.swift; sourceTree = "<group>"; };
+		4A34894129D1A7E9005D205D /* ConfirmWorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmWorkoutVC.swift; sourceTree = "<group>"; };
+		4A34894229D1A7E9005D205D /* ScanWorkoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanWorkoutCell.xib; sourceTree = "<group>"; };
+		4A34894329D1A7E9005D205D /* ConfirmWorkoutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmWorkoutVC.xib; sourceTree = "<group>"; };
+		4A34894429D1A7E9005D205D /* ShowQRVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowQRVC.swift; sourceTree = "<group>"; };
+		4A34894629D1A7E9005D205D /* WorkoutListCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutListCard.xib; sourceTree = "<group>"; };
+		4A34894729D1A7E9005D205D /* WorkoutListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutListVC.swift; sourceTree = "<group>"; };
+		4A34894829D1A7E9005D205D /* WorkoutListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutListVC.xib; sourceTree = "<group>"; };
+		4A34894929D1A7E9005D205D /* WorkoutListCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutListCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A3488ED29D1A697005D205D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A3488E629D1A697005D205D = {
+			isa = PBXGroup;
+			children = (
+				4A3488F229D1A697005D205D /* libfitpass */,
+				4A3488F129D1A697005D205D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A3488F129D1A697005D205D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A3488F029D1A697005D205D /* libfitpass.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A3488F229D1A697005D205D /* libfitpass */ = {
+			isa = PBXGroup;
+			children = (
+				4A34891A29D1A7E8005D205D /* ColorAsset.xcassets */,
+				4A34892029D1A7E8005D205D /* Common */,
+				4A34891829D1A7E8005D205D /* CryptLib.h */,
+				4A34890229D1A7E8005D205D /* CryptLib.m */,
+				4A34890129D1A7E8005D205D /* Crypto */,
+				4A34890429D1A7E8005D205D /* Dashboard */,
+				4A34891929D1A7E8005D205D /* FPConfig.plist */,
+				4A34891E29D1A7E8005D205D /* loader_gif.gif */,
+				4A34891C29D1A7E8005D205D /* Location */,
+				4A34891529D1A7E8005D205D /* Networking */,
+				4A34893E29D1A7E9005D205D /* Scan */,
+				4A34891F29D1A7E8005D205D /* ScanWorkout.swift */,
+				4A34891729D1A7E8005D205D /* ScanWorkout.xib */,
+				4A34893D29D1A7E9005D205D /* ThirdPartyLib */,
+				4A3488FA29D1A7E8005D205D /* Utility */,
+				4A34894529D1A7E9005D205D /* WorkoutList */,
+				4A3488F329D1A697005D205D /* libfitpass.h */,
+			);
+			path = libfitpass;
+			sourceTree = "<group>";
+		};
+		4A3488FA29D1A7E8005D205D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4A3488FB29D1A7E8005D205D /* AsyncImageView.m */,
+				4A3488FC29D1A7E8005D205D /* MyLoader.h */,
+				4A3488FD29D1A7E8005D205D /* UIImage+animatedGIF.h */,
+				4A3488FE29D1A7E8005D205D /* AsyncImageView.h */,
+				4A3488FF29D1A7E8005D205D /* MyLoader.m */,
+				4A34890029D1A7E8005D205D /* UIImage+animatedGIF.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4A34890129D1A7E8005D205D /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		4A34890429D1A7E8005D205D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4A34890529D1A7E8005D205D /* ProgressBarCVCell.xib */,
+				4A34890629D1A7E8005D205D /* FPDashboardCardViewCell.swift */,
+				4A34890729D1A7E8005D205D /* CommonWebPage.xib */,
+				4A34890829D1A7E8005D205D /* MacrosCVCell.swift */,
+				4A34890929D1A7E8005D205D /* DashboardMenuCell.xib */,
+				4A34890A29D1A7E8005D205D /* FPDashboardWorkoutCell.swift */,
+				4A34890B29D1A7E8005D205D /* FitpassDashboard.xib */,
+				4A34890C29D1A7E8005D205D /* ProgressBarCVCell.swift */,
+				4A34890D29D1A7E8005D205D /* MacrosCVCell.xib */,
+				4A34890E29D1A7E8005D205D /* PTFAQTVCell.swift */,
+				4A34890F29D1A7E8005D205D /* FPDashboardWorkoutCell.xib */,
+				4A34891029D1A7E8005D205D /* DashboardMenuCell.swift */,
+				4A34891129D1A7E8005D205D /* FitpassDashboard.swift */,
+				4A34891229D1A7E8005D205D /* FPDashboardCardViewCell.xib */,
+				4A34891329D1A7E8005D205D /* CommonWebPage.swift */,
+				4A34891429D1A7E8005D205D /* PTFAQTVCell.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4A34891529D1A7E8005D205D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4A34891629D1A7E8005D205D /* Downloader.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4A34891C29D1A7E8005D205D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4A34891D29D1A7E8005D205D /* LocationService.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		4A34892029D1A7E8005D205D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4A34892129D1A7E8005D205D /* Constants.swift */,
+				4A34892229D1A7E8005D205D /* FFAlertView.xib */,
+				4A34892329D1A7E8005D205D /* CardView.swift */,
+				4A34892429D1A7E8005D205D /* UIColor+Additions.swift */,
+				4A34892529D1A7E8005D205D /* CircularProgressView.swift */,
+				4A34892629D1A7E8005D205D /* Constant.h */,
+				4A34892729D1A7E8005D205D /* THLabel.m */,
+				4A34892829D1A7E8005D205D /* MyViewController.swift */,
+				4A34892929D1A7E8005D205D /* THLabel */,
+				4A34892A29D1A7E8005D205D /* IconFont.swift */,
+				4A34892B29D1A7E8005D205D /* THLabel.h */,
+				4A34892C29D1A7E8005D205D /* Fonts */,
+				4A34893C29D1A7E8005D205D /* FFAlertView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4A34892929D1A7E8005D205D /* THLabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = THLabel;
+			sourceTree = "<group>";
+		};
+		4A34892C29D1A7E8005D205D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4A34892D29D1A7E8005D205D /* fp_pwa_font_icon.ttf */,
+				4A34892E29D1A7E8005D205D /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4A34892E29D1A7E8005D205D /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				4A34892F29D1A7E8005D205D /* Roboto-Medium.ttf */,
+				4A34893029D1A7E8005D205D /* Roboto-Light.ttf */,
+				4A34893129D1A7E8005D205D /* Roboto-Regular.ttf */,
+				4A34893229D1A7E8005D205D /* Roboto-MediumItalic.ttf */,
+				4A34893329D1A7E8005D205D /* Roboto-ThinItalic.ttf */,
+				4A34893429D1A7E8005D205D /* Roboto-BoldItalic.ttf */,
+				4A34893529D1A7E8005D205D /* Roboto-LightItalic.ttf */,
+				4A34893629D1A7E8005D205D /* Roboto-Italic.ttf */,
+				4A34893729D1A7E8005D205D /* LICENSE.txt */,
+				4A34893829D1A7E8005D205D /* Roboto-BlackItalic.ttf */,
+				4A34893929D1A7E8005D205D /* Roboto-Bold.ttf */,
+				4A34893A29D1A7E8005D205D /* Roboto-Thin.ttf */,
+				4A34893B29D1A7E8005D205D /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		4A34893D29D1A7E9005D205D /* ThirdPartyLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdPartyLib;
+			sourceTree = "<group>";
+		};
+		4A34893E29D1A7E9005D205D /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				4A34893F29D1A7E9005D205D /* ShowQRVC.xib */,
+				4A34894029D1A7E9005D205D /* ScanWorkoutCell.swift */,
+				4A34894129D1A7E9005D205D /* ConfirmWorkoutVC.swift */,
+				4A34894229D1A7E9005D205D /* ScanWorkoutCell.xib */,
+				4A34894329D1A7E9005D205D /* ConfirmWorkoutVC.xib */,
+				4A34894429D1A7E9005D205D /* ShowQRVC.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		4A34894529D1A7E9005D205D /* WorkoutList */ = {
+			isa = PBXGroup;
+			children = (
+				4A34894629D1A7E9005D205D /* WorkoutListCard.xib */,
+				4A34894729D1A7E9005D205D /* WorkoutListVC.swift */,
+				4A34894829D1A7E9005D205D /* WorkoutListVC.xib */,
+				4A34894929D1A7E9005D205D /* WorkoutListCard.swift */,
+			);
+			path = WorkoutList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A3488EB29D1A697005D205D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3488F429D1A697005D205D /* libfitpass.h in Headers */,
+				4A34897029D1A7E9005D205D /* Constant.h in Headers */,
+				4A34897429D1A7E9005D205D /* THLabel.h in Headers */,
+				4A34894C29D1A7E9005D205D /* UIImage+animatedGIF.h in Headers */,
+				4A34894D29D1A7E9005D205D /* AsyncImageView.h in Headers */,
+				4A34894B29D1A7E9005D205D /* MyLoader.h in Headers */,
+				4A34896429D1A7E9005D205D /* CryptLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A3488EF29D1A697005D205D /* libfitpass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A3488F729D1A697005D205D /* Build configuration list for PBXNativeTarget "libfitpass" */;
+			buildPhases = (
+				4A3488EB29D1A697005D205D /* Headers */,
+				4A3488EC29D1A697005D205D /* Sources */,
+				4A3488ED29D1A697005D205D /* Frameworks */,
+				4A3488EE29D1A697005D205D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libfitpass;
+			productName = libfitpass;
+			productReference = 4A3488F029D1A697005D205D /* libfitpass.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A3488E729D1A697005D205D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4A3488EF29D1A697005D205D = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 4A3488EA29D1A697005D205D /* Build configuration list for PBXProject "libfitpass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A3488E629D1A697005D205D;
+			productRefGroup = 4A3488F129D1A697005D205D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A3488EF29D1A697005D205D /* libfitpass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A3488EE29D1A697005D205D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A34897A29D1A7E9005D205D /* Roboto-ThinItalic.ttf in Resources */,
+				4A34897629D1A7E9005D205D /* Roboto-Medium.ttf in Resources */,
+				4A34895429D1A7E9005D205D /* CommonWebPage.xib in Resources */,
+				4A34895229D1A7E9005D205D /* ProgressBarCVCell.xib in Resources */,
+				4A34895A29D1A7E9005D205D /* MacrosCVCell.xib in Resources */,
+				4A34896329D1A7E9005D205D /* ScanWorkout.xib in Resources */,
+				4A34895629D1A7E9005D205D /* DashboardMenuCell.xib in Resources */,
+				4A34897829D1A7E9005D205D /* Roboto-Regular.ttf in Resources */,
+				4A34895C29D1A7E9005D205D /* FPDashboardWorkoutCell.xib in Resources */,
+				4A34897D29D1A7E9005D205D /* Roboto-Italic.ttf in Resources */,
+				4A34898829D1A7E9005D205D /* ConfirmWorkoutVC.xib in Resources */,
+				4A34895829D1A7E9005D205D /* FitpassDashboard.xib in Resources */,
+				4A34898229D1A7E9005D205D /* Roboto-Black.ttf in Resources */,
+				4A34896129D1A7E9005D205D /* PTFAQTVCell.xib in Resources */,
+				4A34897E29D1A7E9005D205D /* LICENSE.txt in Resources */,
+				4A34898C29D1A7E9005D205D /* WorkoutListVC.xib in Resources */,
+				4A34898029D1A7E9005D205D /* Roboto-Bold.ttf in Resources */,
+				4A34897C29D1A7E9005D205D /* Roboto-LightItalic.ttf in Resources */,
+				4A34897B29D1A7E9005D205D /* Roboto-BoldItalic.ttf in Resources */,
+				4A34898129D1A7E9005D205D /* Roboto-Thin.ttf in Resources */,
+				4A34896929D1A7E9005D205D /* loader_gif.gif in Resources */,
+				4A34898A29D1A7E9005D205D /* WorkoutListCard.xib in Resources */,
+				4A34897F29D1A7E9005D205D /* Roboto-BlackItalic.ttf in Resources */,
+				4A34896629D1A7E9005D205D /* ColorAsset.xcassets in Resources */,
+				4A34898729D1A7E9005D205D /* ScanWorkoutCell.xib in Resources */,
+				4A34897729D1A7E9005D205D /* Roboto-Light.ttf in Resources */,
+				4A34896529D1A7E9005D205D /* FPConfig.plist in Resources */,
+				4A34897529D1A7E9005D205D /* fp_pwa_font_icon.ttf in Resources */,
+				4A34895F29D1A7E9005D205D /* FPDashboardCardViewCell.xib in Resources */,
+				4A34897929D1A7E9005D205D /* Roboto-MediumItalic.ttf in Resources */,
+				4A34898429D1A7E9005D205D /* ShowQRVC.xib in Resources */,
+				4A34896C29D1A7E9005D205D /* FFAlertView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A3488EC29D1A697005D205D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A34896829D1A7E9005D205D /* LocationService.swift in Sources */,
+				4A34894E29D1A7E9005D205D /* MyLoader.m in Sources */,
+				4A34896F29D1A7E9005D205D /* CircularProgressView.swift in Sources */,
+				4A34895B29D1A7E9005D205D /* PTFAQTVCell.swift in Sources */,
+				4A34898629D1A7E9005D205D /* ConfirmWorkoutVC.swift in Sources */,
+				4A34897129D1A7E9005D205D /* THLabel.m in Sources */,
+				4A34898B29D1A7E9005D205D /* WorkoutListVC.swift in Sources */,
+				4A34895729D1A7E9005D205D /* FPDashboardWorkoutCell.swift in Sources */,
+				4A34898329D1A7E9005D205D /* FFAlertView.swift in Sources */,
+				4A34895D29D1A7E9005D205D /* DashboardMenuCell.swift in Sources */,
+				4A34898529D1A7E9005D205D /* ScanWorkoutCell.swift in Sources */,
+				4A34894F29D1A7E9005D205D /* UIImage+animatedGIF.m in Sources */,
+				4A34895329D1A7E9005D205D /* FPDashboardCardViewCell.swift in Sources */,
+				4A34898D29D1A7E9005D205D /* WorkoutListCard.swift in Sources */,
+				4A34898929D1A7E9005D205D /* ShowQRVC.swift in Sources */,
+				4A34896B29D1A7E9005D205D /* Constants.swift in Sources */,
+				4A34897229D1A7E9005D205D /* MyViewController.swift in Sources */,
+				4A34896029D1A7E9005D205D /* CommonWebPage.swift in Sources */,
+				4A34895529D1A7E9005D205D /* MacrosCVCell.swift in Sources */,
+				4A34896229D1A7E9005D205D /* Downloader.swift in Sources */,
+				4A34895929D1A7E9005D205D /* ProgressBarCVCell.swift in Sources */,
+				4A34897329D1A7E9005D205D /* IconFont.swift in Sources */,
+				4A34895029D1A7E9005D205D /* CryptLib.m in Sources */,
+				4A34895E29D1A7E9005D205D /* FitpassDashboard.swift in Sources */,
+				4A34894A29D1A7E9005D205D /* AsyncImageView.m in Sources */,
+				4A34896D29D1A7E9005D205D /* CardView.swift in Sources */,
+				4A34896A29D1A7E9005D205D /* ScanWorkout.swift in Sources */,
+				4A34896E29D1A7E9005D205D /* UIColor+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A3488F529D1A697005D205D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A3488F629D1A697005D205D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A3488F829D1A697005D205D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5ZCKHCYNY4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = libfitpass/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitpass.libfitpass;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A3488F929D1A697005D205D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5ZCKHCYNY4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = libfitpass/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitpass.libfitpass;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A3488EA29D1A697005D205D /* Build configuration list for PBXProject "libfitpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A3488F529D1A697005D205D /* Debug */,
+				4A3488F629D1A697005D205D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A3488F729D1A697005D205D /* Build configuration list for PBXNativeTarget "libfitpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A3488F829D1A697005D205D /* Debug */,
+				4A3488F929D1A697005D205D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A3488E729D1A697005D205D /* Project object */;
+}

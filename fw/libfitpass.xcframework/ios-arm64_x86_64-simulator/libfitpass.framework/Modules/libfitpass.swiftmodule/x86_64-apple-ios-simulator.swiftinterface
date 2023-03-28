@@ -1,0 +1,129 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name libfitpass
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreLocation
+import Foundation
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@_exported import libfitpass
+@objc public protocol LocationServiceDelegate {
+  @objc func tracingLocation(_ currentLocation: CoreLocation.CLLocation)
+  @objc func tracingLocationDidFailWithError()
+  @objc optional func tracingLocationDidFailWithoutPrecision()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LocationService : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Device {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MyViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MyViewControllerDark : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Downloader {
+  @objc deinit
+}
+@objc public enum FontIcon : Swift.UInt32 {
+  case back_arrow = 0xe952
+  case icon_scan = 0xe93b
+  case arrow_right = 0xe953
+  case icon_tick = 0xe90b
+  case alert = 0xe908
+  case fitpass_logo = 0xe90f
+  case icon_help = 0xe96b
+  case cross = 0xe903
+  case icon_flash_on = 0xe967
+  case icon_flash_off = 0xe966
+  case arrowDown = 0xe902
+  case arrowUp = 0xe901
+  case icon_refresh_2 = 0xe968
+  case icon_gallery = 0xe969
+  case icon_tick_reserve = 0xe94b
+  case tick = 0xe96a
+  case fitpass = 0xe91b
+  case fitcoach = 0xe91c
+  case fitpass_tv = 0xe912
+  case icon_decor = 0xe96c
+  case activity_1 = 0xe92f
+  case activity_2 = 0xe92e
+  case activity_3 = 0xe92a
+  case activity_4 = 0xe923
+  case activity_5 = 0xe930
+  case activity_6 = 0xe92d
+  case activity_7 = 0xe927
+  case activity_8 = 0xe931
+  case activity_9 = 0xe937
+  case activity_10 = 0xe933
+  case activity_11 = 0xe936
+  case activity_12 = 0xe943
+  case activity_13 = 0xe938
+  case activity_14 = 0xe934
+  case activity_15 = 0xe932
+  public init?(rawValue: Swift.UInt32)
+  public typealias RawValue = Swift.UInt32
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class IconFont : ObjectiveC.NSObject {
+  @objc public class func string(fromIcon icon: libfitpass.FontIcon, size: CoreFoundation.CGFloat = CGFloat(12), color: UIKit.UIColor?) -> Foundation.NSAttributedString?
+  @objc public class func image(fromIcon icon: libfitpass.FontIcon, size: CoreFoundation.CGFloat, color: UIKit.UIColor?) -> UIKit.UIImage?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class FitpassDashboard : libfitpass.MyViewController, CoreLocation.CLLocationManagerDelegate, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) public var myTitle: Swift.String
+  @_Concurrency.MainActor(unsafe) public var hexColorHeaderBG: Swift.String
+  @_Concurrency.MainActor(unsafe) public var hexColorTitleFG: Swift.String
+  @_Concurrency.MainActor(unsafe) public var padding: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var vendor_id: Swift.String
+  @_Concurrency.MainActor(unsafe) public var policy_number: Swift.String
+  @_Concurrency.MainActor(unsafe) public var member_id: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension libfitpass.FitpassDashboard : libfitpass.LocationServiceDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tracingLocation(_ currentLocation: CoreLocation.CLLocation)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tracingLocationDidFailWithError()
+}
+extension libfitpass.FitpassDashboard : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension libfitpass.FitpassDashboard : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
+extension libfitpass.FontIcon : Swift.Equatable {}
+extension libfitpass.FontIcon : Swift.Hashable {}
+extension libfitpass.FontIcon : Swift.RawRepresentable {}

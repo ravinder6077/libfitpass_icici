@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="fp_pwa_font_icon.ttf">
+            <string>fp_pwa_font_icon</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonWebPage" customModule="DemoFitpassLibrary" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="4m9-2e-els" id="2zP-Q1-lzG"/>
+                <outlet property="btnBackLeading" destination="wLL-lg-WYV" id="ZNQ-gK-hom"/>
+                <outlet property="lblCopyRight" destination="EKa-Br-2aR" id="zMp-sm-akv"/>
+                <outlet property="lblHeader" destination="lrh-Cw-grO" id="jeV-R1-CHK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewCopyRight" destination="DbS-TK-36x" id="3e7-rg-7Jx"/>
+                <outlet property="viewCopyRightBottom" destination="Abb-qG-7g1" id="bGg-1N-nwV"/>
+                <outlet property="viewHeader" destination="iiP-ni-o1Y" id="8Gl-c0-dFz"/>
+                <outlet property="viewHeaderBG" destination="V2k-JR-tLT" id="XmH-1v-LEK"/>
+                <outlet property="viewHeaderBGHt" destination="qZD-1c-3MA" id="FDN-Pr-uec"/>
+                <outlet property="viewHeaderHt" destination="2lk-6i-keu" id="e6j-v6-Uwz"/>
+                <outlet property="webView" destination="drj-fD-ozb" id="zvE-gK-Xfb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiP-ni-o1Y">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-2e-els">
+                            <rect key="frame" x="8" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="WNo-Le-jfv"/>
+                                <constraint firstAttribute="height" constant="44" id="icC-AF-NY6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="fp_pwa_font_icon" family="fp_pwa_font_icon" pointSize="22"/>
+                            <state key="normal" title="">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapBtnBack:" destination="-1" eventType="touchUpInside" id="xJR-jQ-bRh"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-Cw-grO">
+                            <rect key="frame" x="60" y="10" width="294" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="k2i-Eo-Ekl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="dusk"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2lk-6i-keu"/>
+                        <constraint firstAttribute="bottom" secondItem="4m9-2e-els" secondAttribute="bottom" id="GvM-wl-hUX"/>
+                        <constraint firstAttribute="trailing" secondItem="lrh-Cw-grO" secondAttribute="trailing" constant="60" id="OhN-vv-j4r"/>
+                        <constraint firstItem="lrh-Cw-grO" firstAttribute="leading" secondItem="iiP-ni-o1Y" secondAttribute="leading" constant="60" id="UIX-h3-dXO"/>
+                        <constraint firstAttribute="bottom" secondItem="lrh-Cw-grO" secondAttribute="bottom" constant="9" id="sx5-dg-nxD"/>
+                        <constraint firstItem="4m9-2e-els" firstAttribute="leading" secondItem="iiP-ni-o1Y" secondAttribute="leading" constant="8" id="wLL-lg-WYV"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-me-sVq">
+                    <rect key="frame" x="234" y="0.0" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="PA4-3T-EJs"/>
+                        <constraint firstAttribute="height" constant="180" id="skH-87-W2m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="fp_pwa_font_icon" family="fp_pwa_font_icon" pointSize="180"/>
+                    <color key="textColor" red="0.050980392156862744" green="0.23137254901960785" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drj-fD-ozb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="828.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2k-JR-tLT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" name="dusk"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qZD-1c-3MA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbS-TK-36x">
+                    <rect key="frame" x="0.0" y="872.5" width="414" height="23.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2015-2023 FITPASS. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKa-Br-2aR">
+                            <rect key="frame" x="20" y="4" width="374" height="14.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="colorOrangeTheme"/>
+                    <constraints>
+                        <constraint firstItem="EKa-Br-2aR" firstAttribute="leading" secondItem="DbS-TK-36x" secondAttribute="leading" constant="20" id="Jio-Oj-mkO"/>
+                        <constraint firstAttribute="bottom" secondItem="EKa-Br-2aR" secondAttribute="bottom" constant="5" id="XMs-Ry-sOf"/>
+                        <constraint firstAttribute="trailing" secondItem="EKa-Br-2aR" secondAttribute="trailing" constant="20" id="dlo-Nj-yOp"/>
+                        <constraint firstItem="EKa-Br-2aR" firstAttribute="top" secondItem="DbS-TK-36x" secondAttribute="top" constant="4" id="kex-KL-rcG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="colorBlueDark"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DbS-TK-36x" secondAttribute="trailing" id="0ue-Ac-gcT"/>
+                <constraint firstItem="Vzg-me-sVq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9M1-Jx-EkT"/>
+                <constraint firstAttribute="bottom" secondItem="DbS-TK-36x" secondAttribute="bottom" id="Abb-qG-7g1"/>
+                <constraint firstAttribute="trailing" secondItem="iiP-ni-o1Y" secondAttribute="trailing" id="EVd-4y-9lV"/>
+                <constraint firstAttribute="trailing" secondItem="drj-fD-ozb" secondAttribute="trailing" id="JHg-ME-DL9"/>
+                <constraint firstItem="V2k-JR-tLT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JyH-4F-9Zg"/>
+                <constraint firstAttribute="trailing" secondItem="Vzg-me-sVq" secondAttribute="trailing" id="KsI-wQ-pzv"/>
+                <constraint firstItem="drj-fD-ozb" firstAttribute="top" secondItem="iiP-ni-o1Y" secondAttribute="bottom" id="M8x-vT-OVL"/>
+                <constraint firstItem="drj-fD-ozb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z5c-Mm-IBt"/>
+                <constraint firstItem="V2k-JR-tLT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eaP-V3-n7T"/>
+                <constraint firstItem="iiP-ni-o1Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fud-BK-Win"/>
+                <constraint firstAttribute="trailing" secondItem="V2k-JR-tLT" secondAttribute="trailing" id="lhP-zm-flV"/>
+                <constraint firstItem="DbS-TK-36x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="omf-Cn-6Yq"/>
+                <constraint firstItem="iiP-ni-o1Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="s0n-Xg-2Yl"/>
+                <constraint firstItem="DbS-TK-36x" firstAttribute="top" secondItem="drj-fD-ozb" secondAttribute="bottom" id="w5r-bx-pfn"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="colorBlueDark">
+            <color red="0.0" green="0.18823529411764706" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorOrangeTheme">
+            <color red="0.90588235294117647" green="0.47058823529411764" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="dusk">
+            <color red="0.3843137254901961" green="0.34901960784313724" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

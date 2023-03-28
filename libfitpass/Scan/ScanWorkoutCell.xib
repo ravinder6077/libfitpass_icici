@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ScanWorkoutCell" customModule="DemoFitpassLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78F-Ri-zOb">
+                        <rect key="frame" x="20" y="10" width="48" height="48"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ttU-Ts-ds8">
+                        <rect key="frame" x="20" y="10" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="MBq-av-ohb"/>
+                            <constraint firstAttribute="height" constant="48" id="cmk-A7-vXY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gym Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUi-CU-HtW">
+                        <rect key="frame" x="78" y="10" width="85.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.043137254899999998" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06 Aug, 05:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-qS-vGa">
+                        <rect key="frame" x="78" y="29.5" width="77.5" height="12"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                        <color key="textColor" red="0.043137254899999998" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout attended successfully at: 5:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xY-oM-kQB">
+                        <rect key="frame" x="78" y="44.5" width="189.5" height="12"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                        <color key="textColor" name="algaeGreen"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqT-Sj-432">
+                        <rect key="frame" x="189.5" y="11.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="AxP-Kw-6wf"/>
+                            <constraint firstAttribute="height" constant="45" id="nTu-Ph-jtr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="10"/>
+                        <color key="tintColor" red="0.043137254899999998" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Scan now" image="qrcode.viewfinder" catalog="system">
+                            <color key="titleColor" red="0.043137254899999998" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-LL-yVg">
+                        <rect key="frame" x="244.5" y="12.5" width="0.5" height="43"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="PSA-go-8EO"/>
+                            <constraint firstAttribute="width" constant="0.5" id="yL6-xW-244"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6m-PL-sRG">
+                        <rect key="frame" x="255" y="11.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="K1W-Rv-D6Z"/>
+                            <constraint firstAttribute="height" constant="45" id="MaS-vT-sKP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="10"/>
+                        <color key="tintColor" red="0.043137254899999998" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Need help" image="questionmark.circle.fill" catalog="system">
+                            <color key="titleColor" red="0.043137254899999998" green="0.1215686275" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXt-9O-Sk1">
+                        <rect key="frame" x="0.0" y="67.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.70588235294117641" green="0.74509803921568629" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="aqy-qr-6kv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pUi-CU-HtW" firstAttribute="leading" secondItem="ttU-Ts-ds8" secondAttribute="trailing" constant="10" id="0vH-mv-7oa"/>
+                    <constraint firstItem="ShU-LL-yVg" firstAttribute="centerY" secondItem="v6m-PL-sRG" secondAttribute="centerY" id="21w-Wb-ocx"/>
+                    <constraint firstItem="ShU-LL-yVg" firstAttribute="leading" secondItem="UqT-Sj-432" secondAttribute="trailing" constant="10" id="26t-MH-pc3"/>
+                    <constraint firstItem="9xY-oM-kQB" firstAttribute="top" secondItem="cd6-qS-vGa" secondAttribute="bottom" constant="3" id="7ch-Fo-MNi"/>
+                    <constraint firstItem="sXt-9O-Sk1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9oX-mo-7RE"/>
+                    <constraint firstAttribute="trailing" secondItem="v6m-PL-sRG" secondAttribute="trailing" constant="20" id="K00-LE-kW8"/>
+                    <constraint firstItem="cd6-qS-vGa" firstAttribute="top" secondItem="pUi-CU-HtW" secondAttribute="bottom" constant="3" id="KNs-a8-dEA"/>
+                    <constraint firstItem="ttU-Ts-ds8" firstAttribute="top" secondItem="78F-Ri-zOb" secondAttribute="top" id="Kyv-b7-du1"/>
+                    <constraint firstItem="ttU-Ts-ds8" firstAttribute="trailing" secondItem="78F-Ri-zOb" secondAttribute="trailing" id="MjP-aZ-TBt"/>
+                    <constraint firstItem="v6m-PL-sRG" firstAttribute="leading" secondItem="ShU-LL-yVg" secondAttribute="trailing" constant="10" id="NOK-IA-WUy"/>
+                    <constraint firstItem="UqT-Sj-432" firstAttribute="centerY" secondItem="v6m-PL-sRG" secondAttribute="centerY" id="NWf-IQ-lPK"/>
+                    <constraint firstItem="9xY-oM-kQB" firstAttribute="leading" secondItem="cd6-qS-vGa" secondAttribute="leading" id="Y8e-Tx-I1A"/>
+                    <constraint firstItem="cd6-qS-vGa" firstAttribute="leading" secondItem="pUi-CU-HtW" secondAttribute="leading" id="YBx-e5-in4"/>
+                    <constraint firstItem="ttU-Ts-ds8" firstAttribute="bottom" secondItem="78F-Ri-zOb" secondAttribute="bottom" id="cpr-yO-deR"/>
+                    <constraint firstItem="v6m-PL-sRG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cx2-bk-6YR"/>
+                    <constraint firstItem="ttU-Ts-ds8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="elu-Nc-OAo"/>
+                    <constraint firstItem="pUi-CU-HtW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kPy-Hr-LWF"/>
+                    <constraint firstAttribute="bottom" secondItem="sXt-9O-Sk1" secondAttribute="bottom" id="pzP-GN-lTA"/>
+                    <constraint firstAttribute="trailing" secondItem="sXt-9O-Sk1" secondAttribute="trailing" id="rhw-w5-buG"/>
+                    <constraint firstItem="ttU-Ts-ds8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tUs-wC-PcV"/>
+                    <constraint firstItem="ttU-Ts-ds8" firstAttribute="leading" secondItem="78F-Ri-zOb" secondAttribute="leading" id="yud-lV-iQn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnHelp" destination="v6m-PL-sRG" id="ltd-GT-yA1"/>
+                <outlet property="btnHelpWidth" destination="K1W-Rv-D6Z" id="Thb-g6-FsR"/>
+                <outlet property="btnScan" destination="UqT-Sj-432" id="zHb-1Y-Dgf"/>
+                <outlet property="btnScanWidth" destination="AxP-Kw-6wf" id="xIJ-R0-aEI"/>
+                <outlet property="imgActivity" destination="ttU-Ts-ds8" id="3dF-E6-GNb"/>
+                <outlet property="lblActivity" destination="pUi-CU-HtW" id="1py-ud-BGh"/>
+                <outlet property="lblActivityTop" destination="kPy-Hr-LWF" id="NUA-OH-S5Z"/>
+                <outlet property="lblSuccess" destination="9xY-oM-kQB" id="Puc-V8-YMR"/>
+                <outlet property="lblTime" destination="cd6-qS-vGa" id="0Vh-Cc-h6o"/>
+                <outlet property="viewGrad" destination="78F-Ri-zOb" id="ojw-8m-Ksf"/>
+                <outlet property="viewSeperator" destination="ShU-LL-yVg" id="Yhg-NY-ufh"/>
+                <outlet property="viewSeperatorLeading" destination="26t-MH-pc3" id="JUc-wx-kLX"/>
+                <outlet property="viewSeperatorTrailing" destination="NOK-IA-WUy" id="Xca-s7-ErW"/>
+                <outlet property="viewSeperatorWidth" destination="yL6-xW-244" id="ktE-38-ngj"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="algaeGreen">
+            <color red="0.12999999523162842" green="0.82599997520446777" blue="0.42399999499320984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>left_padding</key>
+	<real>20.5</real>
+	<key>righ_padding</key>
+	<real>20.5</real>
+	<key>color_in_hex</key>
+	<string>#ff0000</string>
+</dict>
+</plist>
